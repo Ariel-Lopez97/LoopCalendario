@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina para poner en TV LG WebOS</title>
+	<meta http-equiv="refresh" content="312">
+	<style>
+		body {
+			background-color: #fbf9f9; /* Color de fondo blanco (se puede cambiar) */
+			margin: 0; /* Elimina el margen predeterminado del cuerpo */
+		}
+		img {
+			position: fixed; /* Fija la posición del GIF */
+			bottom: 0; 
+			left: 0; 
+			right: 0; 
+			width: 100%; /* Ajusta el ancho del GIF al 100% del ancho de la ventana del navegador web */
+			height: 30%; /* Ajusta la altura del GIF automáticamente para mantener aspecto original */
+		}
+		.half-container {
+			display: flex;
+		}
+		.half-container .left-half {
+			width: 50%; 
+			padding: 10px;
+		}
+		.half-container .right-half {
+			width: 50%; 
+			padding: 10px;
+			position: relative;
+		}
+		.sector-derecho {
+  position: absolute;
+  top: 50px;
+  right: -300px;
+  width: 50%; 
+  padding: 10px;
+}
+
+.sector-derecho img {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  width: 400px; /* anchura de la imagen */
+  height: 400px; /* altura de la imagen */
+}
+
+
+
+	</style>
+</head>
+<body>
+
+	<!-- Mitad superior -->
+	<div class="half-container">
+		<!-- Lado izquierdo -->
+		<div class="left-half">
+			<!-- Aquí debería ir el calendario de Google Forms -->
+			<iframe src="https://calendar.google.com/calendar/embed?src=eventosv21%40gmail.com&ctz=America%2FSantiago" style="border: 0" width="1550" height="900" frameborder="0" scrolling="no"></iframe>
+		</div>
+
+		<!-- Lado derecho -->
+		<div class="sector-derecho">
+			<!-- poner la imagen V21 (Quiza falte centrar la imagen) -->
+			<img src="logo-v21-1.png" alt="Imagen estática">
+		</div>
+	</div>
+
+	<!-- Mitad inferior -->
+	<div style="text-align:center;">
+		<!-- Aquí deberian ir los logos girando mediante el gif -->
+		<img src="LoopLOGOS.gif" alt="GIF animado">
+	</div>
+
+</body>
+</html>
