@@ -29,23 +29,29 @@
 			position: relative;
 		}
 		.sector-derecho {
-  position: absolute;
-  top: 50px;
-  right: -300px;
-  width: 50%; 
-  padding: 10px;
-}
+			position: absolute;
+			top: 50px;
+			right: -300px;
+			width: 50%; 
+			padding: 10px;
+		}
 
-.sector-derecho img {
-  position: absolute;
-  top: 10px;
-  right: 200px;
-  width: 400px; /* anchura de la imagen */
-  height: 400px; /* altura de la imagen */
-}
+		.sector-derecho img {
+			position: absolute;
+			top: 10px;
+			right: 200px;
+			width: 400px; /* anchura de la imagen */
+			height: 400px; /* altura de la imagen */
+		}
 
-
-
+		/* Agregamos estilos para la segunda imagen */
+		.sector-derecho img:nth-child(2) {
+			position: absolute;
+			top: 420px; /* ajusta la posición vertical */
+			right: 150px; /* ajusta la posición horizontal */
+			width: 600px; /* anchura de la imagen */
+			height: auto; /* altura de la imagen */
+		}
 	</style>
 </head>
 <body>
@@ -55,18 +61,20 @@
 		<!-- Lado izquierdo -->
 		<div class="left-half">
 			<!-- Aquí debería ir el calendario de Google Forms -->
-			<iframe src="https://calendar.google.com/calendar/embed?src=eventosv21%40gmail.com&ctz=America%2FSantiago" style="border: 0" width="1550" height="900" frameborder="0" scrolling="no"></iframe>
+			<iframe src="https://calendar.google.com/calendar/embed?src=eventosv21%40gmail.com&ctz=America%2FSantiago" style="border: 0" width="1250" height="800" frameborder="0" scrolling="no"></iframe>
 		</div>
 		<!-- Lado derecho -->
 		<div class="sector-derecho">
 			<!-- poner la imagen V21 (Quiza falte centrar la imagen) -->
 			<img src="logo-v21-1.png" alt="Imagen estática">
+			<!-- agregar segunda imagen -->
+			<img src="CINlogo.png" alt="Segunda imagen">
 		</div>
 	</div>
 	<!-- Mitad inferior -->
 	<div style="text-align:center;">
 		<!-- Aquí deberian ir los logos girando mediante el gif -->
-		<img src="GifLentoLogos.gif" alt="GIF animado">
+		<img src="LoopLOGOS.gif" alt="GIF animado">
 	</div>
 
 </body>
